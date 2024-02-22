@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// Kelas Shirt merupakan turunan dari kelas Clothing.
+// Kelas Shirt merupakan anak dari kelas Clothing dan cucu dari kelas Product
 class Shirt : public Clothing {
 private:
 
@@ -10,9 +10,8 @@ private:
     string sleeve_type;
 
 public:
-    // Konstruktor kosong untuk kelas Shirt.
     Shirt() {
-        // Konstruktor ini tidak melakukan apa-apa pada saat objek Shirt dibuat.
+        
     }
 
     // Metode untuk mengatur nilai warna.
