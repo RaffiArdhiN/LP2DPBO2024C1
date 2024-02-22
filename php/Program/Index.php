@@ -4,10 +4,8 @@
     require_once 'Clothing.php';
     require_once 'Shirt.php';
 
-    // Fungsi untuk mencetak tabel data anggota DPR RI
     function printTable($shirtList) {
 
-        // Membuat tabel untuk data anggota DPR RI 2019/2024
         echo '<table border="0">';
         echo "Data Produk Baju yang Kami Miliki :<br>";
         echo '<tr>';
@@ -23,7 +21,7 @@
         echo '<th>Sleeve</th>';
         echo '</tr>';
 
-        // Menampilkan data anggota dalam bentuk tabel
+        // Menampilkan data baju dalam bentuk tabel
         foreach ($shirtList as $index => $current) {
             echo '<tr>';
             echo '<td>' . ($index + 1) . '</td>';
@@ -52,6 +50,8 @@
 
     // Membuat list untuk menyimpan objek Shirt
     $shirtList = array();
+
+    // Membuat 3 objek baju secara statis
     $shirt1 = new Shirt();
     $shirt1->setIdProduct("1231");
     $shirt1->setName("Kaos_Harimau");
@@ -108,7 +108,7 @@
     while($pilihan != 2) {
         switch ($pilihan) {
             case 0:
-                // Menambahkan data baru
+                // Menambahkan data baru secara dinamis
                 $shirt4 = new Shirt();
                 $shirt4->setIdProduct("1234");
                 $shirt4->setName("Kaos_Batik_Kemeja");
@@ -126,7 +126,6 @@
                 echo "<i>Sampai jumpa lagi :)</i><br>";
                 break;
         }
-        // Menampilkan tabel setelah perubahan
 
         $pilihan++;
     } 
