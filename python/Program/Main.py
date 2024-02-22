@@ -27,7 +27,6 @@ def display_shirt_list(shirt_list):
     total = max_id_length + max_name_length + max_brand_length + max_price_length + max_size_length + \
             max_material_length + max_gender_length + max_color_length + max_sleeve_length
 
-    # Menampilkan data anggota dengan lebar kolom yang sesuai
     if shirt_list:
         for _ in range(total + 18 + 9 + 18 + 3):
             print("-", end="")
@@ -121,7 +120,7 @@ def main():
             shirt4.setSize(inSize)
             shirt4.setMaterial(inMaterial)
             shirt4.setGender(inGender)
-            shirt4.setColor(inColor)  # Tambahkan warna yang diinginkan
+            shirt4.setColor(inColor) 
             shirt4.setSleeve(inSleeve)
                 # id_product=inIdProduct,
                 # name=inName,
