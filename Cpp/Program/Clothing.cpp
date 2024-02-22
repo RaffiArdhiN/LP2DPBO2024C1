@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// Kelas Clothing merupakan turunan dari kelas Product.
+// Kelas Clothing merupakan anak dari kelas Product.
 class Clothing : public Product {
 private:
     string size;
@@ -10,7 +10,6 @@ private:
     string gender;
 
 public:
-    // Konstruktor kosong untuk kelas Clothing.
     Clothing() {
         
     }
