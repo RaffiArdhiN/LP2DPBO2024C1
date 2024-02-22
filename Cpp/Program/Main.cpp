@@ -9,7 +9,6 @@ using namespace std;
 
 // Fungsi untuk menghitung panjang maksimum dan menampilkan data anggota
 void displayShirtList(const vector<Shirt>& shirtList) {
-    // Inisialisasi variabel untuk panjang maksimum setiap kolom
     int maxIdLength = 0;
     int maxNameLength = 0;
     int maxBrandLength = 0;
@@ -70,8 +69,6 @@ int main() {
     vector<Shirt> shirtList;
 
     // Membuat objek cucu secara statis
-    Shirt shirt;
-
     Shirt shirt1;
     shirt1.setIdProduct("1231");
     shirt1.setName("Kaos_Harimau");
