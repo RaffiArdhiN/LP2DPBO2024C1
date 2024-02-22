@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Kelas Product merupakan kelas dasar yang digunakan sebagai landasan untuk kelas turunan seperti Clothing.
 class Product {
 private:
     string idProduct;
@@ -12,7 +11,6 @@ private:
     string price;
 
 public:
-    // Konstruktor kosong untuk kelas Product.
     Product() {
 
     }
